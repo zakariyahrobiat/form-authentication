@@ -41,7 +41,7 @@ const Context = () => {
   const login = () => {
     refContainer.current.style.transform = "translateX(320px)";
     divContainer.current.style.transform = "translateX(320px)";
-    hr.current.style.transform = "translateX(152px)";
+    hr.current.style.transform = "translateX(182px)";
     hr.current.style.width = "42px";
     console.log(hr.current);
   };

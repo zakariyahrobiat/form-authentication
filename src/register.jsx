@@ -5,13 +5,13 @@ const Register = () => {
   const { data, handleSubmit, submit, refContainer } = useAppContext();
   return (
     <div
-      className="absolute left-0 duration-1000 p-6 w-full py-2"
+      className="absolute left-0 duration-1000 px-8 w-full py-6"
       ref={refContainer}
     >
       <form action="" className="text-center ">
-        <div className="mb-4 relative">
+        <div className="mb-5 relative">
           <input
-            className="bg-transparent py-1 border-b border-black w-full text-sm focus:border-red-700 focus:outline-none peer "
+            className="bg-transparent py-2 border-b border-black w-full text-sm focus:border-red-700 focus:outline-none peer "
             type="text"
             name="username"
             id="username"
@@ -21,14 +21,14 @@ const Register = () => {
           />
           <label
             htmlFor="username"
-            className="absolute top-1 left-0 text-sm duration-500 peer-focus:-translate-y-4 peer-valid:-translate-y-4 "
+            className="absolute top-1 left-0 text-base duration-500 peer-focus:-translate-y-5 peer-valid:-translate-y-5 "
           >
             username
           </label>
         </div>
-        <div className="mb-4 relative">
+        <div className="mb-5 relative">
           <input
-            className=" bg-transparent py-1 border-b border-black w-full text-sm focus:border-red-700 focus:outline-none peer "
+            className=" bg-transparent py-2 border-b border-black w-full text-sm focus:border-red-700 focus:outline-none peer "
             type="email"
             name="email"
             id="email"
@@ -38,14 +38,14 @@ const Register = () => {
           />
           <label
             htmlFor="email"
-            className="absolute top-1 left-0 text-sm duration-500 peer-focus:-translate-y-4 peer-valid:-translate-y-4 "
+            className="absolute top-1 left-0 text-base duration-500 peer-focus:-translate-y-5 peer-valid:-translate-y-5 "
           >
             email
           </label>
         </div>
-        <div className="mb-4 relative">
+        <div className="mb-5 relative">
           <input
-            className="bg-transparent py-1  border-b border-black w-full text-sm focus:border-red-700 focus:outline-none peer"
+            className="bg-transparent py-2  border-b border-black w-full text-sm focus:border-red-700 focus:outline-none peer"
             type="password"
             name="password"
             id="password"
@@ -60,9 +60,9 @@ const Register = () => {
             password
           </label>
         </div>
-        <div className="mb-4 relative">
+        <div className="mb-8 relative">
           <input
-            className="bg-transparent py-1  border-b border-black  w-full text-sm focus:border-red-700 focus:outline-none peer"
+            className="bg-transparent py-2  border-b border-black  w-full text-sm focus:border-red-700 focus:outline-none peer"
             type="password"
             name="Cpassword"
             id="Cpassword"
@@ -80,7 +80,7 @@ const Register = () => {
         <button
           type="submit"
           onClick={submit}
-          className=" bg-cyan-500 py-1 px-4  rounded-tl-xl rounded-br-xl hover:bg-black hover:text-cyan-500 "
+          className=" bg-blue-300  text-black py-1 px-4 duration-500 rounded-tl-xl rounded-br-xl hover:bg-white hover:text-black "
         >
           register
         </button>

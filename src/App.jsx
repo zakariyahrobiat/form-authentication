@@ -7,9 +7,9 @@ import "./style.css";
 const App = () => {
   const { register, login, hr } = useAppContext();
   return (
-    <div className="bg-cyan-100 w-60 max-w-full p-6 relative h-72 max-h-full overflow-hidden   ">
+    <div className="bg-blue-700 w-72 max-w-full p-8 relative h-96 max-h-full overflow-hidden text-white  ">
       <div className="flex justify-between">
-        <h1 onClick={register} className="cursor-default">
+        <h1 onClick={register} className="cursor-default ">
           Register
         </h1>
         <h1 onClick={login} className="cursor-pointer ">
