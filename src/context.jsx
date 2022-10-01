@@ -51,17 +51,22 @@ const Context = () => {
     createUserWithEmailAndPassword(auth, email, password)
       .then((response) => {
         console.log(response.user);
+        alert(`${email} "thank you"`);
       })
       .catch((err) => {
         alert(err.message);
       });
   };
   const handleLogin = () => {
-    const email = data.loginEmail;
-    const password = data.loginPassword;
+    // const email = data.loginEmail;
+    // const password = data.loginPassword;
+    const email = data.email;
+    const password = data.password;
+
     signInWithEmailAndPassword(auth, email, password)
       .then((response) => {
         console.log(response.user);
+        alert(`${email} you have an account`);
       })
       .catch((err) => {
         alert(err.message);
